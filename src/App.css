@@ -36,3 +36,108 @@
     transform: rotate(360deg);
   }
 }
+
+/* Close button */
+
+.overlay-top {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.overlay-close {
+  font-size: 2rem;
+  color: #000;
+  text-decoration: none;
+  border: none;
+  background: transparent;
+  padding: 0;
+  margin-top: 5px;
+}
+.overlay-close:hover {
+  opacity: .8;
+}
+
+/* Sign in button */
+
+.overlay-signin-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 10px;
+}
+.overlay-signin-btn {
+  min-width: 90px;
+}
+
+
+/* Overlay Body */
+.mobile-menu-overlay {
+  position: fixed;
+  inset: 0;
+  background: #fff;
+  z-index: 2000;
+  padding: 20px;
+  overflow-y: auto;
+
+  transform: translateY(-20px);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+
+.mobile-menu-overlay.open {
+  transform: translateY(0);
+  opacity: 1;
+  
+}
+
+
+.mobile-menu-overlay.close {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.overlay-close-btn {
+  background: transparent;
+  border: none;
+  font-size: 32px;
+  font-weight: bold;
+  color: #000;
+  cursor: pointer;
+  float: right;
+}
+
+/* Overlay menu items animation */
+.overlay-item {
+  margin: 16px 0;
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 2s ease, transform .35s ease;
+}
+
+.mobile-menu-overlay.open .overlay-item {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+.mobile-link {
+  font-size: 1.25rem;
+  color: #333;
+  text-decoration: none;
+}
+.mobile-link:hover {
+  color: #007bff;
+}
+
+.overlay-signin-wrapper {
+  margin-top: 20px;
+  text-align: left;
+}
+.overlay-signin-btn {
+  width: 120px;
+  height: 45px;
+  font-size: 18px;
+}
+
