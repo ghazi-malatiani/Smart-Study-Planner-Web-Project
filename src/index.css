@@ -21,21 +21,3 @@ code {
 .header-logo {
   transition: transform .3s ease, opacity .25s ease;
 }
-
-.nav-plain {
-  color: #000 !important;
-  opacity: .9;
-}
-.nav-plain:hover, .nav-plain:focus {
-  text-decoration: none;
-  color: #000 !important;
-  opacity: .7;
-}
-
-.mobile-menu-overlay .mobile-link {
-  color: #000;
-  text-decoration: none;
-}
-.mobile-menu-overlay .mobile-link:hover {
-  text-decoration: underline;
-}
